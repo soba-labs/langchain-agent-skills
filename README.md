@@ -75,17 +75,33 @@ Once installed, Claude Code will automatically use these skills when relevant.
 ## Use in Other Repositories
 These skills can be shared by copying a skill folder (for example `skills/langgraph-agent-patterns/`) into another repository or a supported assistant skills directory.
 
-### OpenAI Codex CLI
-Install via the Codex skill installer (replace with your repo path):
-```
-$skill-installer install langgraph-agent-patterns from soba-labs/langchain-agent-skills
-```
-Or clone and copy manually:
+### OpenAI Codex
+Codex reads skills from `.agents/skills` in a repo and `~/.agents/skills` globally
+([Codex customization docs](https://learn.chatgpt.com/docs/customization/overview#skills)).
+The `SKILL.md` format is identical to Claude Code's, so no conversion is needed.
+
 ```bash
 git clone https://github.com/soba-labs/langchain-agent-skills.git
-cp -r langchain-agent-skills/skills/* ~/.codex/skills/
+
+# For one project
+mkdir -p .agents/skills && cp -r langchain-agent-skills/skills/* .agents/skills/
+
+# Or for every project
+mkdir -p ~/.agents/skills && cp -r langchain-agent-skills/skills/* ~/.agents/skills/
 ```
-Restart Codex to pick up new skills.
+
+This repository also ships a Codex plugin manifest at `.codex-plugin/plugin.json`, so it can be
+installed as a Codex plugin from a local marketplace rather than copied by hand.
+
+### OpenCode
+OpenCode searches the widest set of locations and will find these skills in any of them. Per project
+it reads `.opencode/skills/`, `.claude/skills/` and `.agents/skills/`; globally it reads
+`~/.config/opencode/skills/`, `~/.claude/skills/` and `~/.agents/skills/`. Either placement above
+therefore works unchanged, or:
+
+```bash
+mkdir -p .opencode/skills && cp -r langchain-agent-skills/skills/* .opencode/skills/
+```
 
 ### Cursor
 Option 1: Remote rule (GitHub)
@@ -108,6 +124,24 @@ If your assistant does not support skills directly, point it at the skill file:
 Read skills/langsmith-deployment/SKILL.md for production deployment guidance
 Read skills/langgraph-agent-patterns/SKILL.md for multi-agent patterns
 ```
+
+## Harness Compatibility
+
+The skills themselves are harness-agnostic: one `SKILL.md` with `name` and `description` frontmatter,
+optional `scripts/`, `references/` and `assets/`. Claude Code, Codex and OpenCode all read that same
+format and all use progressive disclosure, so nothing in `skills/` is specific to one assistant. Only
+discovery and distribution differ, and this repository ships all three:
+
+- **Claude Code** reads `.claude/skills/` (project) and `~/.claude/skills/` (global); distribution via
+  `.claude-plugin/marketplace.json`.
+- **Codex** reads `.agents/skills/` (project) and `~/.agents/skills/` (global); distribution via
+  `.codex-plugin/plugin.json`.
+- **OpenCode** reads `.opencode/skills/`, `.claude/skills/` and `.agents/skills/`, plus the global
+  equivalents, so it is satisfied by either of the above.
+
+The repo root carries `.claude/skills` and `.agents/skills` as symlinks to `skills/`, which means all
+three assistants discover the skills when this repository is itself the working project (contributors
+get them for free). Windows contributors may need `git config core.symlinks true`.
 
 ## Repository Structure
 - `skills/` - 10 skill packages (9 production skills + skill-creator)
