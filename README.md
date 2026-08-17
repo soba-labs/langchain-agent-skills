@@ -54,13 +54,14 @@ uv run skills/skill-creator/scripts/init_skill.py <skill-name> --path skills/
 ## Install as Claude Code Plugin
 1. Add the marketplace:
 ```
-/plugin marketplace add Lubu-Labs/langchain-agent-skills
+/plugin marketplace add soba-labs/langchain-agent-skills
 ```
-2. Install a skill:
+2. Install a plugin bundle:
 ```
-/plugin install langsmith-deployment@lubu-labs-langchain-agent-skills
+/plugin install langgraph-skills@soba-labs-langchain-agent-skills
 ```
-Or any other skill (e.g., `langgraph-project-setup`, `langgraph-agent-patterns`)
+Three bundles are available: `langgraph-skills` (project setup, agent patterns, state management, error handling), `langsmith-skills` (trace analyzer, deployment) and `deepagents-skills` (setup and configuration, planning and todos). Each bundle also ships `skill-creator`.
+
 Or use the interactive menu:
 ```
 /plugin menu
@@ -77,11 +78,11 @@ These skills can be shared by copying a skill folder (for example `skills/langgr
 ### OpenAI Codex CLI
 Install via the Codex skill installer (replace with your repo path):
 ```
-$skill-installer install langgraph-agent-patterns from Lubu-Labs/langchain-agent-skills
+$skill-installer install langgraph-agent-patterns from soba-labs/langchain-agent-skills
 ```
 Or clone and copy manually:
 ```bash
-git clone https://github.com/Lubu-Labs/langchain-agent-skills.git
+git clone https://github.com/soba-labs/langchain-agent-skills.git
 cp -r langchain-agent-skills/skills/* ~/.codex/skills/
 ```
 Restart Codex to pick up new skills.
@@ -89,15 +90,15 @@ Restart Codex to pick up new skills.
 ### Cursor
 Option 1: Remote rule (GitHub)
 - Cursor Settings → Rules → Add Rule → Remote Rule (GitHub)
-- Use: `https://github.com/Lubu-Labs/langchain-agent-skills.git`
+- Use: `https://github.com/soba-labs/langchain-agent-skills.git`
 
 Option 2: Local installation
 ```bash
 # Project-level
-git clone https://github.com/Lubu-Labs/langchain-agent-skills.git .cursor/skills/agent-skills
+git clone https://github.com/soba-labs/langchain-agent-skills.git .cursor/skills/agent-skills
 
 # User-level
-git clone https://github.com/Lubu-Labs/langchain-agent-skills.git ~/.cursor/skills/agent-skills
+git clone https://github.com/soba-labs/langchain-agent-skills.git ~/.cursor/skills/agent-skills
 ```
 Usage: type `/` in Agent chat to search and select skills by name.
 

@@ -1,13 +1,13 @@
 {
-  "name": "lubulabs-langchain-agent-skills",
+  "name": "soba-labs-langchain-agent-skills",
   "owner": {
-    "name": "Lubu Labs",
-    "email": "simon.budziak@lubulabs.com",
-    "url": "https://www.lubulabs.com/"
+    "name": "Soba Labs",
+    "email": "simon.budziak@sobalabs.ai",
+    "url": "https://sobalabs.ai/"
   },
   "metadata": {
-    "description": "Agent-optimized LangChain, LangGraph and LangSmith skills for AI coding assistants by Lubu Labs",
-    "version": "1.0.1"
+    "description": "Agent-optimized LangChain, LangGraph and LangSmith skills for AI coding assistants by Soba Labs",
+    "version": "2.0.0"
   },
   "plugins": [
     {
