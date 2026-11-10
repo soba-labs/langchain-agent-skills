@@ -1,5 +1,7 @@
 # Agent Skills for LangChain, LangGraph, LangSmith & Deep Agents
 
+[![Built by Soba Labs](https://img.shields.io/badge/built%20by-Soba%20Labs-14273e?style=flat)](https://sobalabs.ai/open-source/?utm_source=github&utm_medium=referral&utm_campaign=langchain-agent-skills&utm_content=readme-badge)
+
 A comprehensive collection of agent-optimized skills for AI coding assistants working in the LangChain ecosystem. These skills cover the complete development lifecycle from project setup to production deployment, monitoring, debugging, and Deep Agents setup/configuration.
 
 Each skill is a self-contained package with a `SKILL.md` entry point plus optional scripts, references, and templates.
@@ -166,3 +168,7 @@ Community contributions are welcome. We want to build great, comprehensive, and 
 5. Request review and respond to feedback quickly so we can merge safely.
 
 Keep changes focused and actionable. `AGENTS.md` is the single source of truth for workflow, tooling, and architecture rules.
+
+## Built by Soba Labs
+
+These skills are free and open source under the MIT license, built and maintained by [Soba Labs](https://sobalabs.ai/?utm_source=github&utm_medium=referral&utm_campaign=langchain-agent-skills&utm_content=readme-footer), an AI-native software development agency that builds and operates production agentic systems. We are LangChain Ambassadors; if you need help taking a LangChain, LangGraph or Deep Agents system to production, write to [contact@sobalabs.ai](mailto:contact@sobalabs.ai).
