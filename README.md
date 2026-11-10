@@ -1,6 +1,10 @@
+<p align="center">
+  <a href="https://sobalabs.ai/?utm_source=github&utm_medium=referral&utm_campaign=langchain-agent-skills&utm_content=readme-banner"><img src=".github/soba-labs-banner.svg" alt="Soba Labs" width="100%"></a>
+</p>
+
 # Agent Skills for LangChain, LangGraph, LangSmith & Deep Agents
 
-[![Built by Soba Labs](https://img.shields.io/badge/built%20by-Soba%20Labs-14273e?style=flat)](https://sobalabs.ai/open-source/?utm_source=github&utm_medium=referral&utm_campaign=langchain-agent-skills&utm_content=readme-badge)
+[![GitHub stars](https://img.shields.io/github/stars/soba-labs/langchain-agent-skills?style=flat)](https://github.com/soba-labs/langchain-agent-skills/stargazers) [![License: MIT](https://img.shields.io/badge/license-MIT-ba9768?style=flat)](https://github.com/soba-labs/langchain-agent-skills/blob/main/LICENSE) [![Sponsored by Soba Labs](https://img.shields.io/badge/sponsored%20by-Soba%20Labs-132a3c?style=flat)](https://sobalabs.ai/?utm_source=github&utm_medium=referral&utm_campaign=langchain-agent-skills&utm_content=readme-badge)
 
 A comprehensive collection of agent-optimized skills for AI coding assistants working in the LangChain ecosystem. These skills cover the complete development lifecycle from project setup to production deployment, monitoring, debugging, and Deep Agents setup/configuration.
 
@@ -168,6 +172,11 @@ Community contributions are welcome. We want to build great, comprehensive, and 
 5. Request review and respond to feedback quickly so we can merge safely.
 
 Keep changes focused and actionable. `AGENTS.md` is the single source of truth for workflow, tooling, and architecture rules.
+
+## Read more
+
+- [LangChain agent skills for AI coding assistants](https://sobalabs.ai/blog/langchain-agent-skills/?utm_source=github&utm_medium=referral&utm_campaign=langchain-agent-skills&utm_content=readme-read-more): why we built these skills and how to install them.
+- [LangGraph agent skills: decisions, not snippets](https://sobalabs.ai/blog/langchain-agent-skills-real-world-example/?utm_source=github&utm_medium=referral&utm_campaign=langchain-agent-skills&utm_content=readme-read-more): the skills tested on a real six-day research agent.
 
 ## Built by Soba Labs
 
