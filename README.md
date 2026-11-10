@@ -4,7 +4,7 @@
 
 # Agent Skills for LangChain, LangGraph, LangSmith & Deep Agents
 
-[![GitHub stars](https://img.shields.io/github/stars/soba-labs/langchain-agent-skills?style=flat)](https://github.com/soba-labs/langchain-agent-skills/stargazers) [![License: MIT](https://img.shields.io/badge/license-MIT-ba9768?style=flat)](https://github.com/soba-labs/langchain-agent-skills/blob/main/LICENSE) [![Sponsored by Soba Labs](https://img.shields.io/badge/sponsored%20by-Soba%20Labs-132a3c?style=flat)](https://sobalabs.ai/?utm_source=github&utm_medium=referral&utm_campaign=langchain-agent-skills&utm_content=readme-badge)
+[![GitHub stars](https://img.shields.io/github/stars/soba-labs/langchain-agent-skills?style=flat)](https://github.com/soba-labs/langchain-agent-skills/stargazers) [![License: MIT](https://img.shields.io/badge/license-MIT-ba9768?style=flat)](https://github.com/soba-labs/langchain-agent-skills/blob/main/LICENSE) [![Built by Soba Labs](https://img.shields.io/badge/built%20by-Soba%20Labs-132a3c?style=flat)](https://sobalabs.ai/?utm_source=github&utm_medium=referral&utm_campaign=langchain-agent-skills&utm_content=readme-badge)
 
 A comprehensive collection of agent-optimized skills for AI coding assistants working in the LangChain ecosystem. These skills cover the complete development lifecycle from project setup to production deployment, monitoring, debugging, and Deep Agents setup/configuration.
 
