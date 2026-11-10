@@ -131,6 +131,8 @@ Read skills/langsmith-deployment/SKILL.md for production deployment guidance
 Read skills/langgraph-agent-patterns/SKILL.md for multi-agent patterns
 ```
 
+Want these skills set up on your team's codebase, or a LangGraph system taken to production? [Talk to Soba Labs](https://sobalabs.ai/contact/?utm_source=github&utm_medium=referral&utm_campaign=langchain-agent-skills&utm_content=readme-inline).
+
 ## Harness Compatibility
 
 The skills themselves are harness-agnostic: one `SKILL.md` with `name` and `description` frontmatter,
@@ -180,4 +182,4 @@ Keep changes focused and actionable. `AGENTS.md` is the single source of truth f
 
 ## Built by Soba Labs
 
-These skills are free and open source under the MIT license, built and maintained by [Soba Labs](https://sobalabs.ai/?utm_source=github&utm_medium=referral&utm_campaign=langchain-agent-skills&utm_content=readme-footer), an AI-native software development agency that builds and operates production agentic systems. We are LangChain Ambassadors; if you need help taking a LangChain, LangGraph or Deep Agents system to production, write to [contact@sobalabs.ai](mailto:contact@sobalabs.ai).
+These skills are free and open source under the MIT license, built and maintained by [Soba Labs](https://sobalabs.ai/?utm_source=github&utm_medium=referral&utm_campaign=langchain-agent-skills&utm_content=readme-footer), an AI-native software development agency that builds and operates production agentic systems. We are LangChain Ambassadors; if you need help taking a LangChain, LangGraph or Deep Agents system to production, [talk to Soba Labs](https://sobalabs.ai/contact/?utm_source=github&utm_medium=referral&utm_campaign=langchain-agent-skills&utm_content=readme-footer) or write to [contact@sobalabs.ai](mailto:contact@sobalabs.ai).
