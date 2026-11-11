@@ -57,6 +57,17 @@ Example: initialize a new skill using the repo tooling.
 uv run skills/skill-creator/scripts/init_skill.py <skill-name> --path skills/
 ```
 
+## Install with the skills CLI
+Install every skill into Claude Code, Codex, Cursor, OpenCode and other agents with the open
+[skills CLI](https://skills.sh):
+```bash
+npx skills add soba-labs/langchain-agent-skills
+```
+Or install one skill:
+```bash
+npx skills add soba-labs/langchain-agent-skills --skill langgraph-agent-patterns
+```
+
 ## Install as Claude Code Plugin
 1. Add the marketplace:
 ```
